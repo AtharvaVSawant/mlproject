@@ -50,6 +50,5 @@ def evaluate_models(X_train, y_train, X_test, y_test, models, param):
             report[key] = r2_score(y_test, y_test_pred)
 
         return report
-
     except Exception as e:
         raise CustomException(e, sys)
